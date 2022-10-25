@@ -1,18 +1,16 @@
-import { Route, Routes} from "react-router-dom"
-import Home from "./components/pages/Home";
-import SingleCoctail from "./components/pages/SingleCoctail";
-import  About from "./components/pages/About";
-
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import SingleCocktail from "./pages/SingleCocktail";
+import About from "./pages/About";
 
 export default function App() {
 	return (
 		<div className="App">
-		<Routes>
-			<Route path="/" element={<Home />} />
-			<Route path="/:id" element={<SingleCoctail />} />
-			<Route path="/about" element={<About />} />
-		</Routes>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/:id" element={<SingleCocktail />} />
+				<Route path="/about" element={<About />} />
+			</Routes>
 		</div>
-	)
+	);
 }
-

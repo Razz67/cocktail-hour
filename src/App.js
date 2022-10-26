@@ -1,8 +1,8 @@
+import "./index.css"
 import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Index";
 import Header from "./components/Header";
-import Home from "./pages/Home";
-import SingleCocktail from "./pages/SingleCocktail";
-import About from "./pages/About";
+import { SingleCocktail } from "./pages/SingleCocktail";
 
 export default function App() {
 	return (
@@ -10,8 +10,7 @@ export default function App() {
 		<Header />
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/:id" element={<SingleCocktail />} />
-				<Route path="/about" element={<About />} />
+				<Route path="/cocktail/:id" element={<SingleCocktail />} />
 			</Routes>
 		</div>
 	);

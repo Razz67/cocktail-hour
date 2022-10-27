@@ -13,10 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 
 img {
   width: 100%;
@@ -54,11 +50,11 @@ img {
 }
 
 .drink-data {
-  background: #afafaf;
+  background: chartreuse;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   color: #476a2e;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .drink img {

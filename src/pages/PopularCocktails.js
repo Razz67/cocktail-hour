@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCocktails } from "../redux/features/CocktailSlice";
+import { PopularCocktails } from "../redux/features/CocktailSlice";
 import { Link } from "react-router-dom";
 import CircleLoader from "react-spinners/CircleLoader";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const CocktailList = () => {
+const PopularList = () => {
 	const { cocktails, loading } = useSelector((state) => ({ ...state.app }));
 	const [modifiedCocktail, setModifiedCoctail] = useState([]);
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		dispatch(fetchCocktails());
+		dispatch(PopularCocktails());
 	}, []);
 
 	useEffect(() => {
@@ -37,7 +37,7 @@ const CocktailList = () => {
 	if (loading) {
 		return (
 			<div className="spinner">
-			<CircleLoader style={{ color: "#36d7b7" }} />
+				<CircleLoader style={{ color: "#36d7b7" }} />
 				<span className="visually-hidden">Loading...</span>
 			</div>
 		);
@@ -51,7 +51,6 @@ const CocktailList = () => {
 					return (
 						<div className="col" key={id}>
 							<div className="card h-2">
-
 								<img src={image} className="card-img-top" alt={name} />
 
 								<div className="card-body" style={{ textAlign: "left" }}>
@@ -72,4 +71,4 @@ const CocktailList = () => {
 	);
 };
 
-export default CocktailList;
+export default PopularList;

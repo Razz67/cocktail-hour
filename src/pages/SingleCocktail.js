@@ -16,7 +16,7 @@ export function SingleCocktail() {
 	}, [id]);
 
 	useEffect(() => {
-		if (cocktail > 0) {
+		if (cocktail.length > 0) {
 			// Destructure the objects that I need from the drinks array
 			const {
 				strDrink: name,
@@ -31,6 +31,7 @@ export function SingleCocktail() {
 				strIngredient4,
 				strIngredient5,
 			} = cocktail[0];
+			console.log(image)
 			const ingredients = [
 				strIngredient1,
 				strIngredient2,
@@ -60,6 +61,7 @@ export function SingleCocktail() {
 	} else {
 		const { name, image, category, info, glass, instructions, ingredients } =
 			modifiedCocktail;
+			console.log(image);
 		return (
 			<>
 				{loading ? (

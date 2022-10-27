@@ -1,6 +1,6 @@
 import React from "react";
 
-const Blogs = () => {
+export default function Blogs() {
 	return (
 		<div
 			style={{
@@ -15,4 +15,3 @@ const Blogs = () => {
 	);
 };
 
-export default Blogs;

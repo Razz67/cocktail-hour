@@ -22,7 +22,7 @@ const Navbar = () => {
 						Home
 					</NavLink>
 					<NavLink to="/popularCocktails" activestyle="true">
-						PopularCocktails
+						Popular Cocktails
 					</NavLink>
 
 					<NavLink to="/nonAlcohol" activestyle="true">

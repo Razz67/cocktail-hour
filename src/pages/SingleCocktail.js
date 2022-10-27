@@ -4,18 +4,19 @@ import { fetchOneCocktail } from "../redux/features/CocktailSlice";
 import { useSelector, useDispatch } from "react-redux";
 import CircleLoader from "react-spinners/CircleLoader";
 
-export const SingleCocktail = () => {
+export function SingleCocktail() {
 	const { cocktail, loading } = useSelector((state) => ({ ...state.app }));
 	const [modifiedCocktail, setModifiedCocktail] = useState([]);
 	const dispatch = useDispatch();
 	const { id } = useParams();
 
+	console.log(cocktail);
 	useEffect(() => {
 		dispatch(fetchOneCocktail({ id }));
 	}, [id]);
 
 	useEffect(() => {
-		if (cocktail && cocktail.length > 0) {
+		if (cocktail > 0) {
 			// Destructure the objects that I need from the drinks array
 			const {
 				strDrink: name,

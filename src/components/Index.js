@@ -1,17 +1,15 @@
-import React from 'react'
-import PopularList from '../pages/PopularCocktails'
-/*import CocktailList from './CocktailList'*/
-import SearchForm from "./SearchForm"
-
+import React from "react";
+import PopularList from "../pages/PopularCocktails";
+import CocktailList from './CocktailList'
+import SearchForm from "./SearchForm";
 
 const Home = () => {
-  return (
-    <div>
-        <SearchForm />
-        {/*<CocktailList />*/}
-        <PopularList />
-    </div>
-  )
-}
+	return (
+		<div>
+			<SearchForm />
+			<CocktailList />
+		</div>
+	);
+};
 
-export default Home
+export default Home;

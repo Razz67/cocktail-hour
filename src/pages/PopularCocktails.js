@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import CircleLoader from "react-spinners/CircleLoader";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const PopularList = () => {
+export const PopularCocktailList = () => {
 	const { cocktails, loading } = useSelector((state) => ({ ...state.app }));
 	const [modifiedCocktail, setModifiedCoctail] = useState([]);
 	const dispatch = useDispatch();
@@ -71,4 +71,4 @@ const PopularList = () => {
 	);
 };
 
-export default PopularList;
+export default PopularCocktailList;

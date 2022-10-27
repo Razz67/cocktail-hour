@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import CircleLoader from "react-spinners/CircleLoader";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export const NonAlcohol = () => {
+export function NonAlcohol() {
 	const { cocktails, loading } = useSelector((state) => ({ ...state.app }));
 	const [modifiedCocktail, setModifiedCoctail] = useState([]);
 	const dispatch = useDispatch();

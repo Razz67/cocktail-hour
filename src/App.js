@@ -2,7 +2,7 @@ import "./index.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Index";
 import { SingleCocktail } from "./pages/SingleCocktail";
-import { PopularCocktails } from "./redux/features/CocktailSlice";
+import { PopularCocktailList } from "./pages/PopularCocktails";
 import { NonAlcohol } from "./pages/NonAlcohol";
 import About from "./pages/about";
 import Blogs from "./pages/blogs";
@@ -14,10 +14,10 @@ export default function App() {
 			<Navbar />
 			<Routes>
 				<Route path="/" exact element={<Home />} />
-
-				<Route path="/popularCocktails" exact element={<PopularCocktails />} />
-
+				
 				<Route path="/cocktail/:id" element={<SingleCocktail />} />
+
+				<Route path="/popularCocktails" exact element={<PopularCocktailList />} />
 
 				<Route path="/nonAlcohol" element={<NonAlcohol />} />
 

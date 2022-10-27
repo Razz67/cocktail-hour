@@ -37,10 +37,14 @@ const CocktailList = () => {
 	if (loading) {
 		return (
 			<div className="spinner">
-			<CircleLoader style={{ color: "#36d7b7" }} />
+				<CircleLoader style={{ color: "#36d7b7" }} />
 				<span className="visually-hidden">Loading...</span>
 			</div>
 		);
+	}
+
+	if (!cocktails) {
+		return <h2>No Cocktails Matched</h2>;
 	}
 
 	return (
@@ -51,7 +55,6 @@ const CocktailList = () => {
 					return (
 						<div className="col" key={id}>
 							<div className="card h-2">
-
 								<img src={image} className="card-img-top" alt={name} />
 
 								<div className="card-body" style={{ textAlign: "left" }}>

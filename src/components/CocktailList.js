@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCocktails } from "../redux/features/CocktailSlice";
 import { Link } from "react-router-dom";
-import  bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+import CircleLoader from "react-spinners/CircleLoader";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const CocktailList = () => {
 	const { cocktails, loading } = useSelector((state) => ({ ...state.app }));
@@ -35,7 +36,8 @@ const CocktailList = () => {
 
 	if (loading) {
 		return (
-			<div className="spinner" role="status">
+			<div className="spinner">
+			<CircleLoader style={{ color: "#36d7b7" }} />
 				<span className="visually-hidden">Loading...</span>
 			</div>
 		);
@@ -53,10 +55,10 @@ const CocktailList = () => {
 								<div className="card-body" style={{ textAlign: "left" }}>
 									<h5 className="card-title">{name}</h5>
 									<h4 className="card-title">{glass}</h4>
-                                    <p className="card-text">{info}</p>
-                                    <Link to={`/cocktail/${id}`}>
-                                    <button className="btn btn-info">Details</button>
-                                    </Link>
+									<p className="card-text">{info}</p>
+									<Link to={`/cocktail/${id}`}>
+										<button className="btn btn-info">Details</button>
+									</Link>
 								</div>
 							</div>
 						</div>

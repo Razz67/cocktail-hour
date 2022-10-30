@@ -8,7 +8,7 @@ export default function Blogs() {
         <div className="col-12 text-center">
             <div className="section-title mb-4 pb-2">
                 <h4 className="title mb-4">Latest Blog &amp; News</h4>
-                <p className="text-muted para-desc mx-auto mb-0">Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
+                <p className="text-muted para-desc mx-auto mb-0">The Cocktail Hour is the place to go when you want to entertain your friends with the latest cocktail beverages.</p>
             </div>
         </div>
     </div>
@@ -26,8 +26,8 @@ export default function Blogs() {
                 </div>
                 <div className="content p-3">
                     <small className="text-muted p float-right">19th Oct, 19</small>
-                    <small><a href="#value" className="text-primary">Marketing</a></small>
-                    <h4 className="mt-2"><a href="#value" className="text-dark title">Quick guide on business with friends.</a></h4>
+                    <small><a href="#value" className="text-primary">Event</a></small>
+                    <h4 className="mt-2"><a href="#value" className="text-dark title">Quick guide on drinking and driving.</a></h4>
                     <p className="text-muted mt-2">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space.</p>
                     <div className="pt-3 mt-3 border-top d-flex">
                         <img src="https://bootdey.com/img/Content/avatar/avatar2.png" className="img-fluid avatar avatar-ex-sm rounded-pill mr-3 shadow" alt="" />
@@ -51,8 +51,8 @@ export default function Blogs() {
                 </div>
                 <div className="content p-3">
                     <small className="text-muted p float-right">19th Oct, 19</small>
-                    <small><a href="#value" className="text-primary">Event</a></small>
-                    <h4 className="mt-2"><a href="#value" className="text-dark title">Become more money-minded</a></h4>
+                    <small><a href="#value" className="text-primary">Safety</a></small>
+                    <h4 className="mt-2"><a href="#value" className="text-dark title">Become A responsible drinker</a></h4>
                     <p className="text-muted mt-2">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space.</p>
                     <div className="pt-3 mt-3 border-top d-flex">
                         <img src="https://bootdey.com/img/Content/avatar/avatar6.png" className="img-fluid avatar avatar-ex-sm rounded-pill mr-3 shadow" alt="" />
@@ -76,8 +76,8 @@ export default function Blogs() {
                 </div>
                 <div className="content p-3">
                     <small className="text-muted p float-right">19th Oct, 19</small>
-                    <small><a href="#value" className="text-primary">Software</a></small>
-                    <h4 className="mt-2"><a href="#value" className="text-dark title">Quick guide on business with friends.</a></h4>
+                    <small><a href="#value" className="text-primary">Popular</a></small>
+                    <h4 className="mt-2"><a href="#value" className="text-dark title">Quick guide on how to call an Uber.</a></h4>
                     <p className="text-muted mt-2">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space.</p>
                     <div className="pt-3 mt-3 border-top d-flex">
                         <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="img-fluid avatar avatar-ex-sm rounded-pill mr-3 shadow" alt="" />

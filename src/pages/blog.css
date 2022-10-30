@@ -1,5 +1,5 @@
 body {
-    margin-top: 20px;
+    margin: 20px 0 30px 0;
     background: #f5f5f5;
 }
 
@@ -83,9 +83,9 @@ body {
     -webkit-text-fill-color: #dd2427;
 }
 
-.avatar.avatar-ex-sm {
-    height: 36px;
-}
+/* .avatar.avatar-ex-sm {
+    height: 350px;
+} */
 
 .shadow {
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) !important;

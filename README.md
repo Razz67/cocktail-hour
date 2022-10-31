@@ -1,6 +1,7 @@
 # Per Scholas RTT-2022-26 Mid-Mod Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![cocktail-hour](https://user-images.githubusercontent.com/6307334/198904826-838e89e1-aa16-4417-8909-f6cde580b038.png)
+
 
 ## Minimum Project Requirements
 <ul>
@@ -13,6 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   <li>Must have a repository and make regular commits (at least 10 total)</li>
   <li>Must be deployed (a good option is NetlifyLinks to an external site.)</li>
 </ul>
+![cocktail-hour](https://user-images.githubusercontent.com/6307334/198904800-1b6f56d8-17f5-4b0a-ada0-9bf9fa22cc5e.png)
 
 ## Extra Credit
 <ul>
